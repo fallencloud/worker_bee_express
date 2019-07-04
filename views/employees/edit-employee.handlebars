@@ -1,0 +1,26 @@
+<div class="edit-employee">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 m-auto">
+        <a href="/employees" class="btn btn-light">
+          Go Back
+        </a>
+        <h1 class="display-4 text-center">Edit An Employee</h1>
+        <form action="/employees/{{employee.id}}?_method=PUT" method="post">
+          <input type="hidden" name="_method" value="PUT">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" name="name" value="{{employee.name}}" required />
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control form-control-lg" name="email" value="{{employee.email}} "
+              required />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" name="phone" value="{{employee.phone}}" required />
+          </div>
+          <input type="submit" class="btn btn-info btn-block mt-4" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

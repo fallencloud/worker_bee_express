@@ -1,0 +1,25 @@
+<div class="add-employee">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 m-auto">
+        <a href="/employees" class="btn btn-light">
+          Go Back
+        </a>
+        <h1 class="display-4 text-center">Add An Employee</h1>
+        {{> _errors}}
+        <form action="/employees" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="* Name" name="name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control form-control-lg" placeholder="* Email" name="email" />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="* Phone" name="phone" />
+          </div>
+          <input type="submit" class="btn btn-info btn-block mt-4" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

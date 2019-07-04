@@ -1,0 +1,37 @@
+{
+  "name": "worker-bee-api",
+  "version": "1.0.0",
+  "description": "\"A MERN stack employee directory\"",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [
+    "javascript",
+    "express",
+    "mongodb",
+    "react",
+    "bootstrap"
+  ],
+  "author": "Sharina V. Jones",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.16.2",
+    "jquery": "^3.4.0",
+    "jsdom": "^14.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.22",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

@@ -1,0 +1,51 @@
+<div class="dashboard">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Dashboard Actions -->
+        <button type="button" class="btn btn-link mb-4">
+          <i class="fas fa-user-circle text-info mr-1"></i><a href="/employees/add-employee">Add Employee</a>
+        </button>
+
+        <!-- Employees -->
+        <div class>
+          <h4 class="mb-2">Employee Directory</h4>
+          {{> _msg}}
+          {{> _errors}}
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Edit/Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each employees}}
+              <tr class="employee">
+                <td>{{name}}</td>
+                <td>
+                  {{email}}
+                </td>
+                <td>{{phone}}</td>
+                <td>
+
+                  <form action="/employees/{{id}}?_method=DELETE" method="post" class="form-inline">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="button" class="btn btn-link mb-4">
+                      <a href="/employees/edit-employee/{{id}}"><i class="far fa-edit text-info mr-1"></i></a>
+                    </button>
+                    <button type="submit" class="btn btn-link mb-4">
+                      <i class="far fa-trash-alt"></i>
+                    </button></form>
+                </td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="register">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 m-auto">
+        <h1 class="display-4 text-center">Sign Up</h1>
+        {{> _errors}}
+        <p class="lead text-center">Create your profile</p>
+        <form action="/admins/register" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Name" name="name" value="{{name}}" />
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control form-control-lg" placeholder="Email Address" name="email"
+              value="{{email}}" />
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Phone Number" name="phone"
+              value="{{phone}}" />
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control form-control-lg" placeholder="Password" name="password"
+              value="{{password}}" />
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control form-control-lg" placeholder="Confirm Password" name="password2"
+              value="{{password2}}" />
+          </div>
+          <input type="submit" class="btn btn-info btn-block mt-4" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
