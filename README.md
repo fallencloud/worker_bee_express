@@ -2,6 +2,8 @@
 
 This is the server side implementation of my Worker Bee app using Node, MongoDB, and Express.
 
+View live: https://nameless-woodland-90676.herokuapp.com/
+
 ## Completed Tasks
 
 1. Created the default Express server.
